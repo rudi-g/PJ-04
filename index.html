@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Slider for Repair Design Studio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/slider.js"></script>
+  </head>
+  <body>
+    <header class="header">
+        <section class="portfolio">
+            <div id="gslider" class="container b-point flex">
+                <div class="projects-slider flex flex-column">
+                    <article class="project-info">
+                        <h2 class="h2">Completed projects</h2>
+                        <p class="p">
+                        Only a small part of the work performed by our company is presented 
+                        on the site. For 14 years on in the construction 
+                        market we have made happy more than 1000 families
+                        </p>
+                        <div class="gallery-mobile">
+                            <div class="controllers left flex justify-content-center align-items-center"></div>
+                            <div class="controllers right flex justify-content-center align-items-center"></div>
+                            <figure class="figure active">
+                                <img src="img/project-1.png" alt="Room with wall clocks">
+                            </figure>
+                            <figure class="figure">
+                                <img src="img/project-2.png" alt="Sochi Thieves">
+                            </figure>
+                            <figure class="figure">
+                                <img src="img/project-3.png" alt="Rostov-on-Don Patriotic">
+                            </figure>
+                        </div>
+                        <div class="wrapper">
+                            <div class="fields-grid active">
+                                <div class="city field">
+                                    <span class="caption">City:</span>
+                                    <span class="value">Rostov-on-Don LCD admiral</span>
+                                </div>
+                                <div class="area field">
+                                    <span class="caption">Apartment area:</span>
+                                    <span class="value">81 m2</span>
+                                </div>
+                                <div class="time field">
+                                    <span class="caption">Repair time:</span>
+                                    <span class="value">3.5 months</span>
+                                </div>
+                                <div class="cost field">
+                                    <span class="caption">Repair Cost:</span>
+                                    <span class="value">Upon request</span>
+                                </div>                                    
+                            </div>
+                            <div class="fields-grid">
+                                <div class="city field">
+                                    <span class="caption">City:</span>
+                                    <span class="value">Sochi Thieves</span>
+                                </div>
+                                <div class="area field">
+                                    <span class="caption">Apartment area:</span>
+                                    <span class="value">105 m2</span>
+                                </div>
+                                <div class="time field">
+                                    <span class="caption">Repair time:</span>
+                                    <span class="value">4 months</span>
+                                </div>
+                                <div class="cost field">
+                                    <span class="caption">Repair Cost:</span>
+                                    <span class="value">Upon request</span>
+                                </div>                                    
+                            </div>
+                            <div class="fields-grid">
+                                <div class="city field">
+                                    <span class="caption">City:</span>
+                                    <span class="value">Rostov-on-Don Patriotic</span>
+                                </div>
+                                <div class="area field">
+                                    <span class="caption">Apartment area:</span>
+                                    <span class="value">93 m2</span>
+                                </div>
+                                <div class="time field">
+                                    <span class="caption">Repair time:</span>
+                                    <span class="value">3 months</span>
+                                </div>
+                                <div class="cost field">
+                                    <span class="caption">Repair Cost:</span>
+                                    <span class="value">Upon request</span>
+                                </div>                                    
+                            </div>
+                        </div>
+                    </article>
+                    <div class="switcher flex">
+                        <div class="controllers left"></div>
+                        <div class="bullets-pagination flex align-items-center">
+                            <div class="bullet project1 active" title="project 1"></div>
+                            <div class="bullet project2" title="project 2"></div>
+                            <div class="bullet project3" title="project 3"></div>
+                        </div>
+                        <div class="controllers right"></div>
+                    </div>
+                </div>
+                <div class="projects-gallery flex flex-column">
+                    <ul class="tabs flex">
+                        <li><a href="#" class="tab active">Rostov-on-Don, Admiral</a></li>
+                        <li><a href="#" class="tab">Sochi Thieves</a></li>
+                        <li><a href="#" class="tab">Rostov-on-Don Patriotic</a></li>
+                    </ul>
+                    <div class="pictures">
+                        <figure class="figure active">
+                            <img class="picture" src="img/project-1.png" alt="Rostov-on-Don. Admiral">
+                        </figure>
+                        <figure class="figure">
+                            <img class="picture" src="img/project-2.png" alt="Sochi Thieves">
+                        </figure>
+                        <figure class="figure">
+                            <img class="picture" src="img/project-3.png" alt="Rostov-on-Don Patriotic">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script>
+        if (window.screen.width > 767) {
+            gallerySlider('gslider');
+        } else {
+            const options = {
+                dots: false,
+                tabs: false,
+                imgSelector: '.gallery-mobile figure'
+            }
+            
+            gallerySlider('gslider', options);
+        }
+    </script>
+  </body>
+</html>
